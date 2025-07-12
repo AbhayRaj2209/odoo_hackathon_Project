@@ -1,28 +1,13 @@
-import os
-import sys
-
 from dotenv import load_dotenv
 load_dotenv()
 
 
 # skillswap/settings.py
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    
-    'users',
-    'skills',
-    'exchanges',
-    'chat',
-    'reviews',
-    
+    ...,
     'rest_framework',
-    'corsheaders',
-    'allauth',
+    'rest_framework_simplejwt',
+    'backend',
 ]
 
 # Database (PostgreSQL)
