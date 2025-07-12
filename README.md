@@ -1,5 +1,5 @@
 # oddo_hackathon_Project
-# Skill Swap Platform
+## Skill Swap Platform
 
 <h2> Team Members </h2>
 <ul>
