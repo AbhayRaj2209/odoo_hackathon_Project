@@ -13,64 +13,65 @@ const LandingPage = () => {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    backgroundColor: "#1E1E2F",
+    backgroundColor: "#ffffff", // white background
     minHeight: "100vh",
-    color: "#F0F0F0",
+    color: "#1E1E2F",
   };
 
   const titleContainerStyle = {
     display: "flex",
-    padding: "30px",
+    padding: "30px 60px",
     margin: "120px 20px 60px",
     justifyContent: "center",
     alignItems: "center",
-    border: "8px solid #00C896",
-    backgroundColor: "#2B2B40",
+    border: "3px solid #854a68ff",
+    backgroundColor: "#fdf7fb",
     borderRadius: "20px",
-    boxShadow: "0 0 25px rgba(0, 200, 150, 0.3)",
+    boxShadow: "0 0 30px rgba(133, 74, 104, 0.3)",
   };
 
   const titleStyle = {
     fontFamily: "Josefin Sans, sans-serif",
-    color: "#00C896",
-    fontWeight: 700,
+    color: "#854a68ff",
+    fontWeight: 800,
     fontSize: "4.5rem",
     textAlign: "center",
   };
 
   const sectionHeaderStyle = {
     textAlign: "center",
-    color: "#1E1E2F",
+    color: "#ffffff",
     fontFamily: "Oswald",
-    backgroundColor: "#00C896",
+    backgroundColor: "#854a68ff",
     width: "100%",
-    fontSize: "3rem",
+    fontSize: "2.7rem",
     fontWeight: 700,
     padding: "20px 0",
-    marginTop: "100px",
+    marginTop: "80px",
   };
 
   const descriptionStyle = {
     fontFamily: "Montserrat, sans-serif",
-    fontSize: "1.1rem",
+    fontSize: "1.15rem",
     textAlign: "left",
-    color: "#EAEAEA",
+    color: "#333333",
     maxWidth: "900px",
     margin: "40px",
-    lineHeight: "1.7",
+    lineHeight: "1.75",
   };
 
   const buttonStyle = {
-    backgroundColor: "#00C896",
-    color: "#1E1E2F",
+    backgroundColor: "#854a68ff",
+    color: "#ffffff",
     border: "none",
     padding: "14px 32px",
     fontSize: "1.1rem",
     fontWeight: "600",
     borderRadius: "8px",
     cursor: "pointer",
-    transition: "background-color 0.3s ease",
+    transition: "all 0.3s ease",
     marginTop: "20px",
+    boxShadow: "0px 4px 14px rgba(133, 74, 104, 0.3)",
   };
 
   const textContainer = {
@@ -85,8 +86,8 @@ const LandingPage = () => {
 
   return (
     <div style={containerStyle}>
+      {/* Logo Box */}
       <div>
-        {/* Removed top/bottom images */}
         <div style={titleContainerStyle}>
           <h1 style={titleStyle}>Skill Swap</h1>
         </div>
@@ -96,16 +97,16 @@ const LandingPage = () => {
       <h2 style={sectionHeaderStyle}>Hackathon Project Overview</h2>
       <div style={descriptionStyle}>
         <p>
-          This platform was built as part of a Hackathon challenge to develop a functional and intuitive solution for
-          **skill exchange and collaborative learning**.
+          <strong>SkillSwap</strong> is a full-stack Hackathon project designed to create a skill-sharing ecosystem
+          that empowers people to exchange talents, connect meaningfully, and grow together.
         </p>
         <p>
-          The project follows a full-stack MERN (MongoDB, Express.js, React.js, Node.js) architecture and enables users
-          to list their skills, search for other users, send swap requests, and give ratings post exchange.
+          Built using the <strong>MERN stack</strong> (MongoDB, Express.js, React.js, Node.js), it features Google OAuth, JWT security, 
+          real-time chat, admin panel, and responsive UI.
         </p>
         <p>
-          Features like **Google OAuth Login**, **JWT Security**, **Chat Functionality**, and **Admin Panel** make this
-          platform production-ready and scalable.
+          This solution reimagines collaborative learning by enabling peer-to-peer knowledge sharing—free, accessible,
+          and beautifully designed.
         </p>
       </div>
 
@@ -133,3 +134,4 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
+
