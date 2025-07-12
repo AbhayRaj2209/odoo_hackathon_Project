@@ -1,0 +1,76 @@
+.requests-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.requests-section h2 {
+  font-size: 2rem;
+  color: #f3ff08;
+  margin-bottom: 2rem;
+}
+
+.requests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.request-card {
+  background: #2b6e90;
+  border: 1px solid #010306;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.request-card .status {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #334155;
+}
+
+.request-card.accepted .status {
+  color: green;
+}
+
+.request-card.rejected .status {
+  color: red;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.accept {
+  background-color: #22c55e;
+  color: white;
+}
+
+.reject {
+  background-color: #ef4444;
+  color: white;
+}
+
+.delete {
+  margin-top: 0.5rem;
+  background-color: #64748b;
+  color: white;
+}
+
+button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+button:hover {
+  opacity: 0.9;
+}
